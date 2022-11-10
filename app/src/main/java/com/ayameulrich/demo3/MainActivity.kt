@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private var binding : ActivityMainBinding? = null
     private val itemsList = ArrayList<String>()
     private lateinit var customAdapter: CustomAdapter
+    private var count: Int = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +38,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addItem() {
-        itemsList.add("Item")
+        itemsList.add("Item ${count}")
         customAdapter.notifyDataSetChanged()
+        count++
     }
 }

@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Hello!"
+        android:text="@string/hello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,12 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:layout_marginBottom="68dp"
-        android:text="Add Item"
+        android:text="@string/add_item"
         app:layout_constraintBottom_toTopOf="@+id/tvTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
