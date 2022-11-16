@@ -1,5 +1,6 @@
 package com.ayameulrich.demo3
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         binding!!.AddItemBtn.setOnClickListener() {
             addItem()
+        }
+
+        binding!!.CardViewExampleBtn.setOnClickListener() {
+            startActivity(Intent(this@MainActivity, CardViewActivity::class.java))
         }
 
         val recyclerView = binding!!.recyclerView
